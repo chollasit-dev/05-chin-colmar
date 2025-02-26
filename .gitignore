@@ -26,3 +26,4 @@ dist-ssr
 # Unneeded node package list (for now)
 package.json
 pnpm-lock.yaml
+.vercel
