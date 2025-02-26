@@ -24,6 +24,7 @@ dist-ssr
 *.sw?
 
 # Unneeded node package list (for now)
+tailwind.config.*
 package.json
 pnpm-lock.yaml
 .vercel
