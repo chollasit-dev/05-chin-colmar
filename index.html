@@ -3,9 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts: Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS v4.0 -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      * {
+        @apply rounded-[1px] outline-[3px] outline-offset-4 outline-transparent transition-colors duration-300 focus-visible:outline-sky-400/40;
+        /* @apply outline outline-1 outline-red-500; */
+      }
+    </style>
+
+    <!-- This website -->
     <title>05-chin-colmar</title>
   </head>
-  <body>
-    <h1>05-chin-colmar</h1>
+  <body class="bg-neutral-50 antialiased">
+    <header class="fixed h-16 w-dvw bg-neutral-50/80 backdrop-blur">
+      <div
+        class="mx-auto flex h-full max-w-screen-xl content-center items-center justify-around px-6 md:justify-between"
+      >
+        <a class="contents h-8 uppercase md:flex">
+          <!-- Appeared on both desktop and mobile -->
+          <img
+            src="/assets/images/ic-logo.svg"
+            alt="Go to Colmar Academy homepage"
+          />
+          <span
+            class="me-0.5 ms-2 text-2xl font-semibold text-neutral-600 max-md:hidden"
+            >colmar</span
+          >
+          <span class="text-2xl text-neutral-400 max-md:hidden">academy</span>
+        </a>
+
+        <!-- Column end -->
+        <ul class="contents gap-4 text-lg md:flex">
+          <li>
+            <a href="">
+              <img
+                src="/assets/images/ic-on-campus.svg"
+                alt="Go to on campus page"
+                class="md:hidden"
+              />
+              <span class="max-md:hidden">On campus</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="/assets/images/ic-online.svg"
+                alt="Go to online page"
+                class="md:hidden"
+              />
+              <span class="max-md:hidden">Online</span>
+            </a>
+          </li>
+          <li class="max-md:hidden"><a href="">or companies</a></li>
+          <li>
+            <a href="">
+              <img
+                src="/assets/images/ic-login.svg"
+                alt="Go to login page"
+                class="md:hidden"
+              />
+              <span class="max-md:hidden">Sign in</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
   </body>
 </html>
